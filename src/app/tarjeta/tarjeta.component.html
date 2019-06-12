@@ -1,0 +1,9 @@
+<h1>Contacto</h1>
+<p><b>Nombre:</b> {{contacto.nombre}}</p>
+<p><b>Dirección:</b> {{contacto.direccion}}</p>
+<p><b>Teléfonos:</b></p>
+<ul>
+  <li *ngFor="let item of contacto.telefonos">{{item}}</li>
+</ul>
+One Way Data-Binding: <input [value]="contacto.nombre" /><br/>
+Two Way Data-Binding: <input [(ngModel)]="contacto.nombre" />
